@@ -1,0 +1,95 @@
+% Modelo UNIPAC para teses e disssertações
+
+% PARA COMEÇAR A ESCREVER NÃO SE DETENHA AOS CÓDIGOS INICIAIS DO DOCUMENTO, VOCÊ IRÁ ENTENDÊ-LOS COM O TEMPO. 
+% vÁ DIRETO PARA O CAPÍTULO 1 - INTRODUÇÃO.
+
+% Arquivo de configurações e pacotes.
+\input{0-setup}
+
+% Arquivo de dados do documento: título, autor...
+\input{1-dados}
+
+% ----------------------------------------------
+% Início do documento
+% ----------------------------------------------
+\begin{document}
+
+% Arquivo de elementos pré-textuais: capa, folha de rosto, ficha catalografica, errata, folha de aprovação dedicatória, agradecimentos, epígrafe, resumos, lista de abreviaturas e siglas, lista de símbolos... 
+\input{2-pretextual}
+
+% ----------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------
+\textual
+
+% ----------------------------------------------
+% Exemplo de capítulo sem numeração, mas presente no Sumário
+% ----------------------------------------------
+%\chapter*[Introdução]{Introdução}
+%\addcontentsline{toc}{chapter}{Introdução}
+% ----------------------------------------------
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAP 1 - INTRODUÇÃO 
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter[Introdução]{Introdução}
+
+\lipsum[11-12]
+
+\chapter{Resumo}
+
+Exemplo de código:
+
+\begin{lstlisting}[language=Python]
+import numpy as np
+ 
+def incmatrix(genl1,genl2):
+    m = len(genl1)
+    n = len(genl2)
+    M = None #to become the incidence matrix
+    VT = np.zeros((n*m,1), int)  #dummy variable
+ 
+    #compute the bitwise xor matrix
+    M1 = bitxormatrix(genl1)
+    M2 = np.triu(bitxormatrix(genl2),1) 
+ 
+    for i in range(m-1):
+        for j in range(i+1, m):
+            [r,c] = np.where(M2 == M1[i,j])
+            for k in range(len(r)):
+                VT[(i)*n + r[k]] = 1;
+                VT[(i)*n + c[k]] = 1;
+                VT[(j)*n + r[k]] = 1;
+                VT[(j)*n + c[k]] = 1;
+ 
+                if M is None:
+                    M = np.copy(VT)
+                else:
+                    M = np.concatenate((M, VT), 1)
+ 
+                VT = np.zeros((n*m,1), int)
+ 
+    return M
+\end{lstlisting}
+
+Exemplo de figura:
+
+\begin{figure}[htp]
+	\centering
+	\caption{\label{fig:met-disc-fig01} No centro da figura é representado um logo $U_1$.} 
+	\includegraphics[width = 0.8\linewidth]{images/UNIPAC.jpg}
+	\legend{Fonte: Desenvolvido pelo autor.}
+\end{figure}
+
+
+\chapter{Conclusão}
+
+\lipsum[11-12]
+
+
+\phantompart
+
+\bibliography{references}
+
+% ----------------------------------------------
+\end{document}

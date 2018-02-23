@@ -1,0 +1,469 @@
+% Modelo UNIPAC para teses e disssertações
+
+% PARA COMEÇAR A ESCREVER NÃO SE DETENHA AOS CÓDIGOS INICIAIS DO DOCUMENTO, VOCÊ IRÁ ENTENDÊ-LOS COM O TEMPO. 
+% vÁ DIRETO PARA O CAPÍTULO 1 - INTRODUÇÃO.
+
+% Arquivo de configurações e pacotes.
+\input{0-setup}
+
+% Arquivo de dados do documento: título, autor...
+\input{1-dados}
+
+% ----------------------------------------------
+% Início do documento
+% ----------------------------------------------
+\begin{document}
+
+% Arquivo de elementos pré-textuais: capa, folha de rosto, ficha catalografica, errata, folha de aprovação dedicatória, agradecimentos, epígrafe, resumos, lista de abreviaturas e siglas, lista de símbolos... 
+\input{2-pretextual}
+
+% ----------------------------------------------
+% ELEMENTOS TEXTUAIS
+% ----------------------------------------------
+\textual
+
+% ----------------------------------------------
+% Exemplo de capítulo sem numeração, mas presente no Sumário
+% ----------------------------------------------
+%\chapter*[Introdução]{Introdução}
+%\addcontentsline{toc}{chapter}{Introdução}
+% ----------------------------------------------
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAP 1 - INTRODUÇÃO 
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter[Introdução]{Introdução}
+
+Projeto, do latim \textit{pro-jicere}: literalmente é colocar adiante. O Projeto de Pesquisa deve ser um roteiro para a elaboração de pesquisa em uma determinada área, que possibilita a produção do conhecimento e sua sistematização sobre o tema específico a ser abordando. O tema abordado deve constituir-se no objeto de estudo da pesquisa. A indicação do tema da pesquisa é o primeiro passo da elaboração do projeto.
+
+O tema deve ser exposto de forma clara, apenas indicando o objeto a ser estudado. Para realizar o trabalho de investigação científica o pesquisador deverá definir e explicitar o tema ou objeto de análise de forma clara e direta. A delimitação do foco da pesquisa implica em situar o tema espacial (delimitação geográfica) e temporalmente (período proposto para a pesquisa), de acordo com o contexto geral da sua área de trabalho, assim como deve apresentar, já nesse momento, uma indicação do problema que será discutido acerca do tema.
+
+O Projeto de pesquisa deve ser escrito de forma tal que pessoas não especialistas no tema, tais como as equipes das agências financiadoras ou organismos de política de pesquisa possam compreender os argumentos apresentados. Se for necessário utilizar termos muito especializados, estes devem ser definidos. Evitar uma linguagem pesada que dificulte a compreensão das ideias desenvolvidas pelo proponente.
+
+Nesse mesmo sentido, tomar em consideração que o especialista a quem será encaminhado o projeto, deve ler muitos outros projetos. Se a redação é longa, complexa, desordenada, pouco clara, pedante e com erros ortográficos ou gramaticais, o especialista poderá até abandonar a leitura.
+
+
+\begin{itemize}
+	\item A elaboração de qualquer projeto depende de dois fatores fundamentais: 
+ 	\begin{itemize}
+	 	\item A capacidade de construir uma imagem mental de uma situação futura;
+ 		\item A capacidade de conceber um plano de ação a ser executado em um tempo determinado que vai permitir sua realização;
+ 	\end{itemize}
+  
+    \item O que fazer? Tema/problema da pesquisa;
+    \item Porque fazer? Justificativa teórico-metodológica;
+    \item Para que fazer? Objetivos da pesquisa;
+    \item Como fazer? Procedimentos/caminhos da pesquisa;
+
+\end{itemize}
+
+Etapas para a elaboração de um projeto de pesquisa:
+
+\begin{itemize}
+	\item Determinando o Tema e o Problema de Pesquisa;
+	\item Determinando os Objetivos e as Hipóteses de Pesquisa;
+	\item Determinando o Tipo de Pesquisa;
+	\item Construindo a Revisão da Literatura;
+	\item Escolhendo os Sujeitos de Pesquisa;
+	\item Determinando os Instrumentos e Procedimentos de Coleta da Informação;
+	\item Transcrevendo e Analisando os Dados;
+	\item Discutindo os resultados e Concluindo.
+\end{itemize}
+
+%\todo[inline, color=yellow]{exemplo de comentário para auxiliar na lista de tarefas e correções}
+
+\todo[inline]{Alguns manuais de pacotes latex foram adicionados na pasta manuals}
+
+\todo[inline, color=red]{Procure se informar a respeito do Mendeley. É um software para gerenciar referencias bibliográficas que irá facilitar muito a inclusão das referências no documento. Procure também como importar as referencias inseridas no mendeley para o arquivo references.bib aqui no overleaf}
+
+Este documento e seu código-fonte são exemplos de referência de uso da classe \textsf{abntex2} e do pacote \textsf{abntex2cite}. O documento exemplifica a elaboração de trabalho acadêmico (tese, dissertação e outros do gênero) produzido conforme a ABNT NBR 14724:2011 \emph{Informação e documentação - Trabalhos acadêmicos - Apresentação}.
+
+A expressão ``Modelo Canônico'' é utilizada para indicar que \abnTeX\ não é modelo específico de nenhuma universidade ou instituição, mas que implementa tão somente os requisitos das normas da ABNT. Uma lista completa das normas observadas pelo \abnTeX\ é apresentada em \citeonline{abntex2classe}. 
+
+Este documento deve ser utilizado como complemento dos manuais do \abnTeX\ \cite{abntex2classe,abntex2cite,abntex2cite-alf} e da classe \textsf{memoir} \cite{memoir}. 
+
+Esperamos, sinceramente, que o \abnTeX\ aprimore a qualidade do trabalho que você produzirá, de modo que o principal esforço seja concentrado no principal: na contribuição científica.
+
+\section{Justificativa}
+
+A justificativa consiste em uma exposição sucinta, porém completa, das razões de ordem teórica e dos motivos de ordem prática que tornam importante a realização da pesquisa. Como o próprio nome indica, é o convencimento de que o trabalho de pesquisa é fundamental de ser efetivado, ela deve exaltar a importância do tema a ser estudado.
+
+\section{Delimitação do tema ou problema}
+
+Para a determinação do problema ou tema de pesquisa é importante responder as seguintes questões:
+	
+\begin{itemize}
+\item Esse problema é novo?
+\item Esse problema é relevante social e cientificamente?
+\item Esse problema pode ser respondido, dado o atual nível de desenvolvimento da área científica em questão?
+\item Existe disponibilidade (físico-financeira) para a realização de tal trabalho no ambiente que estou?	\end{itemize}
+	
+
+\section{Delimitação do trabalho}
+
+É muito importante determinar o escopo do trabalho, até onde o trabalho vai chegar e quais questões ele deve responder. Um trabalho completo deve cumprir seu escopo evitando fugir do tema e evitando questões não respondidas. Quando a delimitação do trabalho não é feita de forma precisa, o cronograma não será suficiente para o término do mesmo.
+
+
+\section{Objetivos}
+
+Objeto [do latim \textit{objectu}] é tudo o que é percebível por qualquer dos sentidos humanos. A definição dos Objetivos determina o que o pesquisador quer atingir com a realização do trabalho de pesquisa. Cumprir os objetivos consiste em responder as perguntas do passo anterior, levando em consideração alguns fatores importantes, como o tempo e os recursos disponíveis para a realização da pesquisa, a experiência do pesquisador e as necessidades do Programa de pesquisa.
+
+
+Exemplos aplicáveis a objetivos:
+
+\begin{itemize}
+
+\item Quando a pesquisa tem o objetivo de conhecer: Apontar, citar, classificar, conhecer, definir, descrever, identificar, reconhecer, relatar.
+\item Quando a pesquisa tem o objetivo de compreender: Compreender, concluir, deduzir, demonstrar, determinar, diferenciar, discutir, interpretar, localizar, reafirmar.
+\item Quando a pesquisa tem o objetivo de aplicar: Desenvolver, empregar, estruturar, operar, organizar,
+praticar, selecionar, traçar, otimizar, melhorar.
+\item Quando a pesquisa tem o objetivo de analisar: Comparar, criticar, debater, diferenciar, discriminar, examinar, investigar, provar, ensaiar, medir, testar, monitorar, experimentar.
+\item Quando a pesquisa tem o objetivo de sintetizar: Compor, construir, documentar, especificar, esquematizar, formular, produzir, propor, reunir, sintetizar.
+\item Quando a pesquisa tem o objetivo de avaliar: Argumentar, avaliar, contrastar, decidir, escolher, estimar, julgar, medir, selecionar.
+
+\end{itemize}
+
+
+\subsection{Objetivos Gerais}
+
+Os objetivos gerais consistem em mostrar uma visão global do assunto a ser pesquisado. Além disso, o objetivo geral está relacionado diretamente as questões de pesquisa.
+    
+\subsection{Objetivos Específicos}
+
+Os objetivos mostram uma visão específicas do assunto, ou seja, seu ponto central. Além disso, são etapas menores que deverão ser cumpridas com o foco em cumprir os objetivos gerais.
+    
+
+\chapter{Metodologia}
+
+Metodologia é o conjunto de procedimentos empregado na realização do estudo. Para construir a metodologia, é importante definir o tipo de pesquisa:
+
+\begin{itemize}
+\item O tipo de pesquisa depende de como o problema foi formulado:
+\item Problemas que envolvam a causa de fenômenos demandam pesquisas experimentais;
+\item Problemas que envolvam classificações encaixam-se melhor em pesquisas descritivas.
+\end{itemize}
+
+Classificação das pesquisas:
+
+\begin{itemize}
+\item Natureza;
+\item Método de investigação;
+\item Abordagem do problema;
+\item Abordagem dos objetivos;
+\item Abordagem dos procedimentos de coleta e análise de dados
+\end{itemize}
+
+A natureza da pesquisa pode ser qualitativa ou quantitativa:
+
+\begin{itemize}
+\item A pesquisa qualitativa fornece uma compreensão profunda de certos fenômenos sociais, apoiados no
+pressuposto da maior relevância do aspecto subjetivo da ação social, visto que foca fenômenos complexos e/ou fenômenos únicos.
+\item A pesquisa quantitativa supõe uma população de objetos de observação comparável entre si; Enfatiza os indicadores numéricos e percentuais sobre determinado fenômeno pesquisado; Apresenta gráficos e tabelas, comparativas determinado objeto/fenômenos pesquisados.
+\end{itemize}
+
+A pesquisa quantitativa pode ser aplicada em conjunto com a qualitativa.
+
+
+
+\subsection{Participantes}
+
+\subsection{Instrumentos}
+
+\subsection{Procedimento de coleta e aspectos éticos}
+
+\subsection{Análise de dados}
+
+\subsubsection{Riscos}
+
+\subsubsection{Vantagens}
+
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAP 2 - REVISÃO BIBLIOGRAFICA
+% ||||||||||||||||||||||||||||||||||||||||||||||
+\chapter{Revisão Bibliográfica}
+
+\begin{figure}[htp]
+	\centering
+	\caption{\label{fig:met-disc-fig01} No centro da figura é representado um logo $U_1$.} 
+	\includegraphics[width = 0.8\linewidth]{images/UNIPAC.jpg}
+	\legend{Fonte: Desenvolvido pelo autor.}
+\end{figure}
+
+Matematicamente, o Fator de Potência (FP) pode ser expresso como:
+\begin{equation}
+	\label{eq:k-55}
+    {
+    \displaystyle 
+    FP = \frac{\cos(\varphi)}{\sqrt{1 - THD^2}}
+    }
+\end{equation}
+
+\section{Desenho de circuitos}
+
+\begin{circuitikz} \draw
+	(0,0)
+    %to [battery, v=V1]
+    to [R, l=R1, i=$i_{1}$]
+    (0,4)
+    
+    (0,4)
+    to [battery, v=V1]
+    %to [R, l=R1, i=$i_{1}$]
+	(4,4)
+    node[anchor=south]{A}
+    
+    (4,0)
+    to [R, l=R2, v>=$V_{R2}$, i=$i_{2}$, *-*]
+    (4,4)
+    
+    (4,0)
+    to [short]
+    (0,0)
+    
+    (8,4)
+    to [battery, v_>=V2]
+    %to [R, l=R3, i>^=$i_{3}$]
+	(4,4)
+    
+    (8,0)
+    to [short]
+    (4,0)
+    node[anchor=north]{G}
+    
+    (8,0)
+    %to [battery, v=V2]
+    to [R, l=R3, i=$i_{3}$]
+    (8,4)
+    ;
+\end{circuitikz}
+
+
+\lipsum[11-13]
+
+A Tabela \ref{tab_cronograma} apresenta o cronograma de execução das atividades desta proposta.\\
+
+\begin{table}[!htpb]
+\centering
+\caption{Cronograma das atividades previstas}
+\setlength{\tabcolsep}{5pt} 
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}\hline
+ & \multicolumn{12}{c|}{Meses}\\ \cline{2-13}
+\raisebox{1.5ex}{Etapa} & 1 & 2 & 3 & 4 & 5 & 6 & 7 & 8 & 9 & 10 & 11 & 12 \\ \hline \hline
+A1 & \cellcolor{black} &   &   &   &   &   &   &   &   &   &   &   \\ \hline
+A2 &   & \cellcolor{black} &   &   &   &   &   &   &   &   &   &   \\ \hline
+A3 &   & \cellcolor{black} & \cellcolor{black} &   &   &   &   &   &   &   &   &   \\ \hline
+A4 &   &   &   & \cellcolor{black} & \cellcolor{black} &   &   &   &   &   &   &   \\ \hline
+A5 &   &   &   &   &   & \cellcolor{black} & \cellcolor{black} &   &   &   &   &   \\ \hline
+A6 &   &   &   &   &   &   &   & \cellcolor{black} & \cellcolor{black} &   &   &   \\ \hline
+A7 &   &   &   &   &   &   &   &   &   & \cellcolor{black} & \cellcolor{black} & \cellcolor{black} \\ \hline
+\end{tabular} 
+\legend{Fonte: Produzido pelo autor  }
+\label{tab_cronograma}
+\end{table} 
+
+
+
+\chapter{Projeto}
+
+\chapter{Resultados} \label{resultados}
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CONCLUSÃO (capítulo sem numeração e presente no sumário)
+% ||||||||||||||||||||||||||||||||||||||||||||||
+%\chapter*[Conclusão]{Conclusão}
+%\addcontentsline{toc}{chapter}{Conclusão}
+% Utilize caso a conclusão seja um capitulo sem numeracao.
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% CAPITULO 5
+% ||||||||||||||||||||||||||||||||||||||||||||||
+ \chapter{Conclusão}
+
+ \lipsum[11-12]
+
+
+ \section{Trabalhos futuros}
+
+ \lipsum[21-22]
+
+% ----------------------------------------------
+% Finaliza a parte no bookmark do PDF para que se inicie o bookmark na raiz e adiciona espaço de parte no Sumário
+% ----------------------------------------------
+\phantompart
+
+% Arquivo de elementos pós-textuais: referências, apêndices e anexos 
+\input{3-postextual}
+
+% ----------------------------------------------
+\end{document}
+% ----------------------------------------------
+
+% ||||||||||||||||||||||||||||||||||||||||||||||
+% ALGUNS EXEMPLOS DE CODIGO LATEX
+% ||||||||||||||||||||||||||||||||||||||||||||||
+
+% ----------------------------------------------
+%	Figure example
+% ----------------------------------------------
+% \begin{figure}[htp]
+% \centering
+% \caption{\label{fig:x} Aqui vai o caption da imagem.}
+% \includegraphics[width = 0.9\linewidth ]{images/x.png}
+% \legend{Fonte: Adaptado de \citeonline{x}.}
+% \end{figure}
+
+% ----------------------------------------------
+%	Figure example
+% ----------------------------------------------
+%\begin{figure}[htp]
+%\centering
+%\includegraphics[width = 0.5\linewidth ]{dlayer.jpg}
+%\caption{\label{fig:1}Complanar waveguide parameters using two dielectric layers \cite{cwccs}.} 
+%\end{figure}
+
+% ----------------------------------------------
+%	Equation example \ref{eqn:1}
+% ----------------------------------------------
+%\begin{eqnarray}
+%\epsilon _{r} & = & \epsilon _{r}'(1-i\tan(\delta))
+%\label{eqn:1}
+%\end{eqnarray}
+
+% ----------------------------------------------
+%	Complex equations example \ref{eqn:2}
+% ----------------------------------------------
+%\begin{eqnarray}
+%C_{1} & = & 2\epsilon _{0}(\epsilon _{r1}-1)\frac{K(k_{1})}{K(k_{1}')}\nonumber\\
+%& = & 2\epsilon _{0}(\epsilon _{r1}'-i\tan(\delta)\epsilon _{r1}'-1)\frac{K(k_{1})}{K(k_{1}')}\nonumber\\
+%& = & 2\epsilon _{0}(\epsilon _{r1}'-1)\frac{K(k_{1})}{K(k_{1}')}-i2\epsilon _{0}(\tan(\delta)\epsilon _{r1}')\frac{K(k_{1})}{K(k_{1}')}\\
+%C_{2} & = & 2\epsilon _{0}(\epsilon _{r2}-\epsilon _{r1})\frac{K(k_{2})}{K(k_{2}')}\nonumber\\
+%& = & 2\epsilon _{0}(\epsilon _{r2}'-i\tan(\delta)\epsilon _{r2}'-\epsilon _{r1}'+i\tan(\delta)\epsilon _{r1}')\frac{K(k_{2})}{K(k_{2}')}\nonumber\\
+%& = & 2\epsilon _{0}(\epsilon _{r2}'-\epsilon _{r1}')\frac{K(k_{2})}{K(k_{2}')}-i2\epsilon _{0}(\tan(\delta)\epsilon _{r2}'-\tan(\delta)\epsilon _{r1}')\frac{K(k_{2})}{K(k_{2}')}\\
+%C_{vac} & = & 4\epsilon _{0}\frac{K(k_{0})}{K(k_{0}')}
+%\label{eqn:2}
+%\end{eqnarray}
+
+% ----------------------------------------------
+%	Table example \ref{tab:1} 
+% ----------------------------------------------
+%\begin{table}[htb]
+%\caption{Constants and Parameters.}
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|}
+%\hline
+%\bfseries CONSTANT & \bfseries VALUE & \bfseries CONSTANT & \bfseries VALUE \\
+%\hline \hline
+%$\epsilon _{0}$ & 8.8540$\times$10$^{-12}$ & $c$ & 299792458~m/s \\
+%\hline
+%$\epsilon _{r1}$ & 11.7 & $h_{1}$ & 300~$\mu$m \\
+%\hline
+%$\epsilon _{r2}$ & 7.5 & $h_{2}$ & 200~nm \\
+%\hline
+%$\delta _{1}$ & 10$^{-4}$ & $\delta _{2}$ & 10$^{-2}$ $\sim$ 10$^{-3}$ \\
+%\hline
+%\end{tabular}
+%\end{center}
+%\label{tab:1}
+%\end{table}
+
+% ----------------------------------------------
+%	Complex table example \ref{tab:2}
+% ----------------------------------------------
+%\begin{table}[htb]
+%\caption{Results and dimensions.}
+%\begin{center}
+%\begin{tabular}{|c|c|c|c|c|}
+%\hline
+%\bfseries $f_{0}$ [MHz] & \bfseries $S$ [$\mu$m] & \bfseries $W$ [$\mu$m] & \bfseries $d$ [cm] & \bfseries $C_{c}$ [fF] \\
+%\hline
+%\hline
+%\multirow{4}{*}{650} & \multirow { 2}{*}{2} & \multirow{ 2}{*}{1} & \multirow{ 2}{*}{9.4966} & 10 \\
+%\cline{5-5}
+%& & & & 30 \\
+%\cline{2-4} \cline{5-5}
+%& \multirow { 2}{*}{4.5} & \multirow { 2}{*}{2.3} & \multirow { 2}{*}{9.3155} &         10 \\
+%\cline{5-5}
+%& & & & 30 \\
+%\hline
+%\multirow { 4}{*}{6000} &  \multirow { 2}{*}{2} &  \multirow { 2}{*}{1} &  \multirow { 2}{*}{1.0288} &          1 \\
+%\cline{5-5}
+%& & & & 3 \\
+%\cline{2-4} \cline{5-5}
+%& \multirow { 2}{*}{4.5} &  \multirow { 2}{*}{2.3} &  \multirow { 2}{*}{1.0092} &          1 \\
+%\cline{5-5}
+%& & & & 3 \\
+%\hline
+
+%\end{tabular}
+%\end{center}
+%\label{tab:2}
+%\end{table}
+
+% ----------------------------------------------
+%	Two graphics in one \ref{fig:2}
+% ----------------------------------------------
+%\begin{figure}[htp]
+%\centering
+%\begin{tabular}{cc}
+%(a) & (b) \\
+%\includegraphics[width = 0.5\linewidth ]{DM_6G_4p5_3_6.jpg} &
+%\includegraphics[width = 0.5\linewidth ]{DM_650_4p5_10_6.jpg}
+%\end{tabular}
+%\caption{captions} 
+%\label{fig:2}
+%\end{figure}
+
+% ----------------------------------------------
+%	Four graphics in one table \ref{fig:3}
+% ----------------------------------------------
+%\begin{figure}[htp]
+%\centering
+%\begin{tabular}{cc}
+%(a) & (b) \\
+%\includegraphics[width = 0.5\linewidth ]{DM_650_4p5_10_1.jpg} &
+%\includegraphics[width = 0.5\linewidth ]{DM_650_4p5_30_1.jpg} \\
+%(c) & (d) \\
+%\includegraphics[width = 0.5\linewidth ]{DM_6G_4p5_1_1A.jpg} &
+%\includegraphics[width = 0.5\linewidth ]{DM_6G_4p5_3_1.jpg} \\
+%\end{tabular}
+%\caption{Captions} 
+%\label{fig:3}
+%\end{figure}
+
+% ----------------------------------------------
+%	Quote and footnote
+% ----------------------------------------------
+%\begin{quote} ``adkfjahsldkfjashflkasdjfhadslkfjhasdlfkjadshflsda
+%kjdshflkasjdfhalskfjhadslfksdajhfladskjfhsda
+%kajsdfhlaksdjfhasdkl'' \footnote{test footnote}
+%\end{quote}
+
+% ----------------------------------------------
+%	PDF Annotation
+% ----------------------------------------------
+%\pdfannot % generic annotation
+%width 10cm % the dimension of the annotation can be controlled
+%height 0cm % via <rule spec>; if some of dimensions in
+%depth 4cm % <rule spec> is not given, the corresponding
+% value of the parent box will be used.
+%{ %
+%/Subtype /Text % text annotation
+%/Open true % if given then the text annotation will be opened
+%/Contents % text contents
+%(write comments in here...)
+%}%
+%
+
+% ----------------------------------------------
+% Tutorial para compilação offline
+% ----------------------------------------------
+% Faça o download dos seguintes softwares: Miktex (basic) e texStudio
+% https://miktex.org/download
+% http://www.texstudio.org/
+% Instale o Miktex e selecione para instalar os pacotes automaticamente... Install Packages on the Fly = Yes
+% Depois de instalado abra o "Miktex Package Manager (Admin)" e já instale os pacotes "abntex2" e o "cm-super".
+% Instale o texstudio
+% Faça o download dos arquivos do projeto no Overleaf "Download as ZIP"
+% Descompacte no diretório de projeto desejado... use um diretório para cada projeto pois durante a compilação serão gerados diversos arquivos
+% Abra o "main.tex" do projeto no texstudio e clique no icone >> para compilar o projeto... tecla de atalho = F5.
